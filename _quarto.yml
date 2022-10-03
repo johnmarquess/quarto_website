@@ -1,0 +1,20 @@
+project:
+  type: website
+
+website:
+  title: "John Marquess"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/johnmarquess
+      - icon: twitter
+        href: https://twitter.com/mistermarquess
+highlight-style: nord
+format:
+  html:
+    toc: true
+    toc-location: "left"
+    code-link: true
+    theme:
+      light: [litera, main.scss]

@@ -1,0 +1,22 @@
+---
+title: "Blog posts"
+listing:
+  contents: posts
+  feed: true
+  sort-ui: false
+  filter-ui: false
+  sort: 
+    - "date desc"
+    - "title desc"
+  type: default
+  image-height: 150px
+  fields: [image, title, description, date, reading-time]
+  categories: numbered
+  date-format: "D MMMM, YYYY"
+  page-size: 10
+toc: false
+toc-location: body
+page-layout: full
+title-block-banner: false
+---
+
