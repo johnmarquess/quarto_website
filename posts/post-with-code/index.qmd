@@ -1,0 +1,45 @@
+---
+title: "Post With Code"
+description: |
+  A short description about this post. Add more test to test what this looks like on the landing page.
+date: "2022-10-02"
+image: "/posts/post-with-code/image.jpg"
+categories: [code, analysis]
+title-block-banner: true
+
+twitter-card:
+  image: "/posts/post-with-code/image.jpg"
+  card-style: summary_large_image
+
+---
+## Title 1
+:::{.callout-warning}
+
+Note that I'm really only interested in the session info and which packages were attached (ie via `library(pkgname)`), so I'll use the `pkgs = "attached"` argument. This flexibility is nice!
+
+:::
+
+```{r eval=TRUE, echo=TRUE, message=FALSE}
+#| fig-label: "ggplot"
+library(tidyverse)
+ggplot(mpg, aes(x = displ, y = hwy, colour = factor(cyl))) +
+    geom_point(size = 3, alpha = I(4 / 10)) +
+    labs(x = "Highway mileage (miles per gallon)", y = "Displacement") +
+    scale_colour_discrete(name = "Number of\ncylinders") +
+    theme_minimal() +
+    theme(
+        axis.text = element_text(size = 12),
+        axis.title = element_text(size = 14, color = "#3f3f3f", face = "bold"),
+        legend.title = element_text(size = 14),
+        legend.text = element_text(size = 12)
+    )
+
+```
+## Title 2
+
+Some text
+
+[This should show up as an aside on the right of the text in title 2.]{.aside}
+
+
+

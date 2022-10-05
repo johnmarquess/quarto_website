@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Blog posts",
     "section": "",
-    "text": "No matching items"
+    "text": "An example post in a new folder\n\n\n\n\n\n\n3 October, 2022\n\n\n0 min\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\nA short description about this post. Add more test to test what this looks like on the landing page.\n\n\n\n\n\n\n2 October, 2022\n\n\n0 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,26 @@
     "title": "About",
     "section": "",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum convallis urna. Suspendisse tempor iaculis neque sit amet aliquam. Donec auctor leo at rutrum efficitur. In hac habitasse platea dictumst. Cras ac massa quis metus ultricies congue sed nec risus. Mauris leo leo, dictum sed vestibulum egestas, condimentum non magna. Fusce magna ligula, lacinia ac congue a, imperdiet ultrices quam. Cras vitae interdum quam. Aenean tellus nulla, mattis non augue finibus, posuere rutrum justo. Vivamus eleifend purus in nisl congue elementum. Fusce pulvinar sollicitudin nibh, sit amet iaculis odio eleifend a. Mauris ac purus finibus, tristique lacus id, posuere orci. Vestibulum scelerisque mauris ac tempus rhoncus."
+  },
+  {
+    "objectID": "posts/another-post/index.html",
+    "href": "posts/another-post/index.html",
+    "title": "Another post",
+    "section": "",
+    "text": "```{r}\n#| label: tbl-example\n#| tbl-cap: \"Example\"\n#| tbl-subcap:\n#|   - \"Cars\"\n#|   - \"Pressure\"\n#| layout-ncol: 2\n\nlibrary(knitr)\nkable(head(cars))\nkable(head(pressure))\n```\n\n\nTable 1: Example\n\n\n\n\n(a) Cars\n\nspeed\ndist\n\n\n\n4\n2\n\n\n4\n10\n\n\n7\n4\n\n\n7\n22\n\n\n8\n16\n\n\n9\n10\n\n\n\n\n\n\n(b) Pressure\n\ntemperature\npressure\n\n\n\n0\n0.0002\n\n\n20\n0.0012\n\n\n40\n0.0060\n\n\n60\n0.0300\n\n\n80\n0.0900\n\n\n100\n0.2700"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "Warning\n\n\n\nNote that I’m really only interested in the session info and which packages were attached (ie via library(pkgname)), so I’ll use the pkgs = \"attached\" argument. This flexibility is nice!\n\n\n\nlibrary(tidyverse)\nggplot(mpg, aes(x = displ, y = hwy, colour = factor(cyl))) +\n    geom_point(size = 3, alpha = I(4 / 10)) +\n    labs(x = \"Highway mileage (miles per gallon)\", y = \"Displacement\") +\n    scale_colour_discrete(name = \"Number of\\ncylinders\") +\n    theme_minimal() +\n    theme(\n        axis.text = element_text(size = 12),\n        axis.title = element_text(size = 14, color = \"#3f3f3f\", face = \"bold\"),\n        legend.title = element_text(size = 14),\n        legend.text = element_text(size = 12)\n    )"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html#title-2",
+    "href": "posts/post-with-code/index.html#title-2",
+    "title": "Post With Code",
+    "section": "Title 2",
+    "text": "Title 2\nSome text\nThis should show up as an aside on the right of the text in title 2."
   }
 ]

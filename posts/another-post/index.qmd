@@ -1,0 +1,27 @@
+---
+title: "Another post"
+description: |
+  An example post in a new folder
+date: "2022-10-03"
+categories: [qarto, blog]
+title-block-banner: true
+
+---
+
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis malesuada mi nec vestibulum. Donec quam ipsum, laoreet sed ornare et, commodo nec sapien. Donec lorem est, auctor nec laoreet vel, semper id risus. Proin rhoncus, mi a laoreet malesuada, augue tellus condimentum orci, nec mollis nibh nisl eu eros. Duis sodales erat metus, a molestie leo molestie et. Pellentesque semper nisi quis urna venenatis ornare. Integer venenatis tempus nunc a blandit. Nullam purus nunc, pellentesque nec augue a, venenatis congue felis. Duis sit amet dui nisi. Quisque viverra nunc ante, vel fermentum ligula dapibus nec. Donec tempor porta ex ut rutrum. Donec vehicula lacus id felis fringilla tempus.
+
+```{r}
+#| label: tbl-example
+#| tbl-cap: "Example"
+#| tbl-subcap: 
+#|   - "Cars"
+#|   - "Pressure"
+#| layout-ncol: 2
+#| echo: fenced
+
+library(knitr)
+kable(head(cars))
+kable(head(pressure))
+```
