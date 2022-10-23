@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "John Marquess",
     "section": "",
-    "text": "A short description about this post. Add more test to test what this looks like on the landing page.\n\n\n\n\n\n\n2 October, 2022\n\n\n0 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Using the gt package to make a table with fake respiratory pathogen data.\n\n\n\n\n\n\n2 October, 2022\n\n\n0 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -31,6 +31,20 @@
     "objectID": "posts/post-with-code/index.html#title-2",
     "href": "posts/post-with-code/index.html#title-2",
     "title": "Post With Code",
+    "section": "Title 2",
+    "text": "Title 2\nSome text\nThis should show up as an aside on the right of the text in title 2."
+  },
+  {
+    "objectID": "posts/2022-10-23-first-post-with-quarto/index.html",
+    "href": "posts/2022-10-23-first-post-with-quarto/index.html",
+    "title": "First post with quarto",
+    "section": "",
+    "text": "Warning\n\n\n\nNote that I’m really only interested in the session info and which packages were attached (ie via library(pkgname)), so I’ll use the pkgs = \"attached\" argument. This flexibility is nice!\n\n\n\nlibrary(tidyverse)\nggplot(mpg, aes(x = displ, y = hwy, colour = factor(cyl))) +\n    geom_point(size = 3, alpha = I(4 / 10)) +\n    labs(x = \"Highway mileage (miles per gallon)\", y = \"Displacement\") +\n    scale_colour_discrete(name = \"Number of\\ncylinders\") +\n    theme_minimal() +\n    theme(\n        axis.text = element_text(size = 12),\n        axis.title = element_text(size = 14, color = \"#3f3f3f\", face = \"bold\"),\n        legend.title = element_text(size = 14),\n        legend.text = element_text(size = 12)\n    )"
+  },
+  {
+    "objectID": "posts/2022-10-23-first-post-with-quarto/index.html#title-2",
+    "href": "posts/2022-10-23-first-post-with-quarto/index.html#title-2",
+    "title": "First post with quarto",
     "section": "Title 2",
     "text": "Title 2\nSome text\nThis should show up as an aside on the right of the text in title 2."
   }

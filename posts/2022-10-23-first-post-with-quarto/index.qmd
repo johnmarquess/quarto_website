@@ -1,14 +1,14 @@
 ---
-title: "Post With Code"
+title: "First post with quarto"
 description: |
-  A short description about this post. Add more test to test what this looks like on the landing page.
+  Using the `gt` package to make a table with fake respiratory pathogen data.
 date: "2022-10-02"
-image: "/posts/post-with-code/image.jpg"
-categories: [code, analysis]
+image: "/posts/2022-10-23-first-post-with-quarto/image.jpg"
+categories: [gt, tables, tidyverse]
 title-block-banner: true
 
 twitter-card:
-  image: "/posts/post-with-code/image.jpg"
+  image: "/posts/2022-10-23-first-post-with-quarto/image.jpg"
   card-style: summary_large_image
 
 ---
