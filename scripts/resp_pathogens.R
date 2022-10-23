@@ -1,11 +1,11 @@
 library(tidyverse)
 library(gt)
 
-
+#  Data available from https://www.mockaroo.com/6c4871a0
 resp <- read_csv("data/respiratory.csv")
-glimpse(resp)
 
 
+# Group data by hospital and pathogen
 resp_hosp_group <- resp %>% 
     group_by(hospital, condition) %>% 
     tally() %>% 
@@ -13,7 +13,7 @@ resp_hosp_group <- resp %>%
     pivot_wider(names_from = condition, values_from = n) %>% 
     ungroup() 
 
-
+#  Make a nice table
 resp_hosp_group %>% 
     gt() %>% 
     tab_header(
@@ -44,5 +44,28 @@ resp_hosp_group %>%
     cols_align(align = c("left"), columns = everything()) %>%
     cols_align(align = c("right"), columns = where(is.numeric)) %>% 
     cols_width(hospital ~ px(200),
-        everything() ~ px(120)) 
+        everything() ~ px(120)) %>% 
+    tab_style(
+        locations = cells_column_labels(),
+        style = list(
+            cell_fill("#183C5D"),
+            cell_text("#FFFFFF", weight = 500)
+        ) 
+    ) %>% 
+    tab_style(
+        locations = cells_body(
+            columns = hospital
+        ),
+        style = list(
+            cell_fill("#0F5CA2"),
+            cell_text("#FFFFFF", weight = 500)
+        ) 
+    ) %>% 
+    tab_style(
+       locations = cells_body(
+           style = list(
+               cell_text(size = 9)
+           )
+       ) 
+    )
 
