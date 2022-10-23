@@ -3,6 +3,9 @@ project:
 
 website:
   title: "John Marquess"
+  comments:
+    utterances:
+      repo: johnmarquess/quarto_website
   navbar:
     right:
       - about.qmd
